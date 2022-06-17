@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Game</title>
+ <script defer src="./js/main1.js"></script>
+ <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <main>
+    <p><img src ="./img/wrong-svgrepo-com.svg" alt = "wrong_svg" id = "wrong">
+    <span id="time">Wrong</span></p>
+    <p><img src ="./img/correct.svg" alt = "correct_svg" id = "checkmark">
+    <span id="correct">Correct</span></p>
+
+  <div class ="container">  
+   <div class="txtClr">
+    <h1 id="txt">The Stroop Effect</h1>
+<div class="color_choice">
+   <button class="color green" onclick="checkAnswer('green')">Green</button>
+   <button class="color orange" onclick="checkAnswer('orange')" >Orange</button>
+   <button class="color blue" onclick="checkAnswer('blue')" >Blue</button>
+   <button class="color red" onclick="checkAnswer('red')">Red</button>
+</div>
+   </div>
+  </main>
+
+
+   <div class="btn_cont">
+   <button class="btn" onclick="randomColor()">Start Game</button>
+   <button class ="reset" onclick="resertButton()">Reset</button>
+  </div>
+  </div>
+
+ </main>
+ 
+</body>
+</html>
